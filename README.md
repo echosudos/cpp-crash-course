@@ -5,9 +5,8 @@ Welcome to your journey into the world of competitive programming with C++! This
 - Programming Setup
 - Brief Introduction to Competitive Programming
 - C++ Basics
-    - Parts of Basic C++ Code
-    - Input/Output
-    - Variables/Arrays
+    - Intro to C++
+    - Arrays
     - Conditionals
     - Loops
     - Functions
@@ -45,6 +44,13 @@ Welcome to your journey into the world of competitive programming with C++! This
 
 ## Programming Set-up
 
+- Guide for Windows
+- Guide for Mac
+- Guide for Linux
+- Text editors and IDEs
+- Compiler
+- Odin Project
+
 ---
 
 ## Brief Introduction to Competitive Programming
@@ -53,46 +59,50 @@ Welcome to your journey into the world of competitive programming with C++! This
 
 ## C++ Basics
 
-### Parts of Basic C++ Code
+### Intro to C++
+
+#### Parts of Basic C++ Code
 
 At its core, every C++ program contains a structure similar to this:
 
 ```cpp
-#include <iostream> // Preprocessor directive
+#include <bits/stdc++.h>                       // Preprocessor directive/Library
+using namespace std;                           // Makes the program use the "Standard Namespace"
 
-int main() {        // The main function where execution starts
-    std::cout << "Hello, World!" << std::endl; // Print statement
-    return 0;       // End the program
+int main() {                                   // The main function where execution starts
+    cout << "Hello, World!" << endl;           // Print statement
+    return 0;                                  // End the program
 }
 ```
 
 **Breakdown**:
-- `#include <iostream>`: This imports the library for input/output functions.
+- `#include <bits/stdc++.h>`: This imports the library for every function you would need. Functions like the math functions, input/output functions, algorithms, string handling, etc.
+- `using napespace std;`: This makes it so that you don't need to type `cout` and `endl` as `std::cout << "Hello, World!" << std::end;`, its useful for simple/small programs, but not so much in larger programs as it might result in conflicts with other namespaces. 
 - `int main()`: Every C++ program must have a `main` function, which is where the program starts executing.
-- `std::cout`: Outputs data to the console.
+- `cout`: Outputs data to the console. In this case, it's "Hello, World!" 
 - `return 0`: Signals the end of the program.
 
-**Mini-Assignments**: 
-1. Write a program that prints "Welcome to C++!" to the console.
-2. Modify the program to print your name instead of "Hello, World!"
+#### Assignment
+```markdown
+1. Try programming in C++ by copying the "Hello, World!" C++ program (Don't Copy paste it! Type it, so that you start building muscle memory.) and change "Hello, World!" to "Welcome to C++!"
+2. Modify what you did in #1 by adding another print statement that prints your name instead of "Hello, World!"
+```
 
----
-
-### Input/Output
+#### Input/Output
 
 **Input** allows users to provide data, and **output** displays the results. In C++:
 - `std::cout` is used for output.
 - `std::cin` is used for input.
 
 ```cpp
-#include <iostream>
+#include <iostream>                                                 // Imports the library for Input/Output functions
 
 int main() {
-    int age;
-    std::cout << "Enter your age: ";
-    std::cin >> age; // Input stored in variable 'age'
-    std::cout << "You are " << age << " years old." << std::endl;
-    return 0;
+    int age;                                                        // Creates an integer variable called "age"
+    std::cout << "Enter your age: ";                                // Prints "Enter your age:" and does not move on to the next line in the console
+    std::cin >> age;                                                // Input stored in variable 'age'
+    std::cout << "You are " << age << " years old." << std::endl;   // Prints "You are <inputted age> years old."
+    return 0;                                                       // Signals the end of the program
 }
 ```
 
@@ -104,9 +114,7 @@ int main() {
 - [Learn about Input/Output in C++](https://www.learncpp.com/cpp-tutorial/input-and-output/)
 - [Basic I/O Practice Problems on HackerRank](https://www.hackerrank.com/challenges/cpp-input-and-output/problem)
 
----
-
-### Variables/Arrays
+#### Variables
 
 Variables store data, and arrays store multiple values of the same type.
 
@@ -133,7 +141,18 @@ std::cout << numbers[0]; // Access first element
 - [Arrays in C++](https://www.geeksforgeeks.org/arrays-in-cpp/)
 - [Arrays and Data Structures Practice Problems](https://www.hackerrank.com/domains/tutorials/10-days-of-cplusplus)
 
+#### Knowledge check
+These questions provide a chance to think about the important topics covered in this lesson. If you're unsure of an answer, click the question to revisit the material. Remember, you're not expected to memorize or fully master this information.
+
+- [How do you output things to the terminal and accept input in C++?](https://www.learncpp.com/cpp-tutorial/input-and-output/)
+
+#### Additional Resources
+This part offers useful links to relevant content. It's optional and meant to be extra material for further reading.
+- a
+
 ---
+
+### Arrays
 
 ### Conditionals
 
