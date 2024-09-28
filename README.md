@@ -1,16 +1,21 @@
-Sure! Here's a markdown template you can use for your C++ crash course. This template is designed to be clean, organized, and reader-friendly when viewed on GitHub.
-
+# C++ Crash Course for Competitive Programming Beginners
 ---
 
-```markdown
-# 🚀 C++ Crash Course for Competitive Programming Beginners
-
-Welcome to your journey into the world of competitive programming with C++! This crash course is designed to equip you with the essential tools and knowledge to start solving problems efficiently.
+Welcome to your journey into the world of competitive programming with C++! This course is designed to equip you with the following:
+- Programming Setup
+- Brief Introduction to Competitive Programming
+- C++ Basics
+    - Parts of Basic C++ Code
+    - Input/Output
+    - Variables/Arrays
+    - Conditionals
+    - Loops
+    - Functions
+- Others (maybe coming soon)
 
 ---
 
 ## 📋 Table of Contents
-
 - [Introduction](#introduction)
 - [Getting Started](#getting-started)
   - [Hello World](#hello-world)
@@ -37,6 +42,193 @@ Welcome to your journey into the world of competitive programming with C++! This
 - [Additional Resources](#additional-resources)
 
 ---
+
+## Programming Set-up
+
+---
+
+## Brief Introduction to Competitive Programming
+
+---
+
+## C++ Basics
+
+### Parts of Basic C++ Code
+
+At its core, every C++ program contains a structure similar to this:
+
+```cpp
+#include <iostream> // Preprocessor directive
+
+int main() {        // The main function where execution starts
+    std::cout << "Hello, World!" << std::endl; // Print statement
+    return 0;       // End the program
+}
+```
+
+**Breakdown**:
+- `#include <iostream>`: This imports the library for input/output functions.
+- `int main()`: Every C++ program must have a `main` function, which is where the program starts executing.
+- `std::cout`: Outputs data to the console.
+- `return 0`: Signals the end of the program.
+
+**Mini-Assignments**: 
+1. Write a program that prints "Welcome to C++!" to the console.
+2. Modify the program to print your name instead of "Hello, World!"
+
+---
+
+### Input/Output
+
+**Input** allows users to provide data, and **output** displays the results. In C++:
+- `std::cout` is used for output.
+- `std::cin` is used for input.
+
+```cpp
+#include <iostream>
+
+int main() {
+    int age;
+    std::cout << "Enter your age: ";
+    std::cin >> age; // Input stored in variable 'age'
+    std::cout << "You are " << age << " years old." << std::endl;
+    return 0;
+}
+```
+
+**Mini-Assignments**: 
+1. Create a program that takes a user's name and age, and then prints a message with this information.
+2. Write a program that asks the user for two numbers and prints their sum, difference, product, and quotient.
+
+**Additional Practice**: 
+- [Learn about Input/Output in C++](https://www.learncpp.com/cpp-tutorial/input-and-output/)
+- [Basic I/O Practice Problems on HackerRank](https://www.hackerrank.com/challenges/cpp-input-and-output/problem)
+
+---
+
+### Variables/Arrays
+
+Variables store data, and arrays store multiple values of the same type.
+
+**Basic Variables Example**:
+```cpp
+int x = 5;        // Integer
+double y = 4.2;   // Floating-point number
+char grade = 'A'; // Character
+```
+
+**Array Example**:
+```cpp
+int numbers[5] = {1, 2, 3, 4, 5};
+std::cout << numbers[0]; // Access first element
+```
+
+**Mini-Assignments**: 
+1. Write a program that declares variables of different types (e.g., `int`, `float`, `char`) and prints them.
+2. Write a program that stores 5 different ages in an array and prints the average.
+3. Create an array of 10 integers and print only the even numbers.
+
+**Additional Practice**: 
+- [C++ Variable Declarations](https://www.learncpp.com/cpp-tutorial/variables-and-assignments/)
+- [Arrays in C++](https://www.geeksforgeeks.org/arrays-in-cpp/)
+- [Arrays and Data Structures Practice Problems](https://www.hackerrank.com/domains/tutorials/10-days-of-cplusplus)
+
+---
+
+### Conditionals
+
+Conditionals control the flow of a program based on certain conditions.
+
+```cpp
+int age = 20;
+if (age >= 18) {
+    std::cout << "You are an adult.";
+} else {
+    std::cout << "You are not an adult.";
+}
+```
+
+**Mini-Assignments**: 
+1. Write a program that checks if a number is even or odd.
+2. Create a program that takes in a student's score and prints their letter grade (A, B, C, D, F).
+3. Write a program that asks for the user's age and tells them if they are eligible to vote (18 or older).
+
+**Additional Practice**: 
+- [Conditional Statements in C++](https://www.learncpp.com/cpp-tutorial/if-statements/)
+- [Conditional Statements Practice Problems](https://www.hackerrank.com/challenges/conditional-statements-in-c/problem)
+
+---
+
+### Loops
+
+Loops are used to execute a block of code repeatedly.
+
+**For Loop Example**:
+```cpp
+for (int i = 0; i < 5; i++) {
+    std::cout << "Loop iteration: " << i << std::endl;
+}
+```
+
+**While Loop Example**:
+```cpp
+int i = 0;
+while (i < 5) {
+    std::cout << "While loop iteration: " << i << std::endl;
+    i++;
+}
+```
+
+**Mini-Assignments**: 
+1. Write a program that prints numbers from 1 to 10 using a `for` loop.
+2. Create a program that prints the first 10 numbers in the Fibonacci sequence.
+3. Write a program that takes a positive integer `n` as input and prints all numbers from `n` down to 1 using a `while` loop.
+
+**Additional Practice**: 
+- [C++ Loops](https://www.learncpp.com/cpp-tutorial/loops/)
+- [Looping Practice Problems](https://www.hackerrank.com/challenges/for-loop-in-c/problem)
+
+---
+
+### Functions
+
+Functions group code into reusable blocks. Here’s how to define and use them:
+
+```cpp
+int add(int a, int b) {
+    return a + b;
+}
+
+int main() {
+    int sum = add(5, 3);
+    std::cout << "Sum is: " << sum << std::endl;
+    return 0;
+}
+```
+
+**Mini-Assignments**: 
+1. Write a function that takes two numbers as input and returns the larger of the two.
+2. Create a function that calculates the factorial of a number.
+3. Write a program that asks for two numbers and uses a function to return their greatest common divisor (GCD).
+
+**Additional Practice**: 
+- [Functions in C++](https://www.learncpp.com/cpp-tutorial/functions/)
+- [Function Practice Problems](https://www.hackerrank.com/challenges/functions-in-c/problem)
+
+---
+
+## Additional Learning Resources
+1. [C++ Documentation](https://en.cppreference.com/w/)
+2. [C++ Track on Exercism](https://exercism.org/tracks/cpp)
+3. [C++ Crash Course](https://www.learncpp.com/)
+4. [Practice Problems on LeetCode](https://leetcode.com/problemset/all/)
+5. [10 Days of C++ on HackerRank](https://www.hackerrank.com/domains/tutorials/10-days-of-cplusplus)
+
+---
+
+You can continue building on this guide by adding more advanced topics like pointers, object-oriented programming, and error handling!
+
+```markdown
 
 ## Introduction
 
